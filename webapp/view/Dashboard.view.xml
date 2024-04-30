@@ -13,7 +13,7 @@
         <Image id="_IDGenImage1" src="../assets/images/inetum.png"  class="customLogoClass"/>
         <tnt:SideNavigation id="sideNavigation" selectedKey="home" class="sidenav">
             <tnt:NavigationList id="_IDGenNavigationList1">
-                <tnt:NavigationListItem id="_IDGenNavigationListItem1" class="sideNavLinks" text="Homepage" icon="sap-icon://home"/>
+                <tnt:NavigationListItem id="_IDGenNavigationListItem1" class="sideNavLinks" text="Dahsboard" icon="sap-icon://home"/>
                 <tnt:NavigationListItem id="_IDGenNavigationListItem2" class="sideNavLinks" text="Consultants" icon="sap-icon://add-employee"/>
                 <tnt:NavigationListItem id="_IDGenNavigationListItem3" class="sideNavLinks" text="Tickets" icon="sap-icon://task"/>
                 <tnt:NavigationListItem id="_IDGenNavigationListItem4" class="sideNavLinks" text="Projects" icon="sap-icon://business-objects-experience"/>
@@ -75,7 +75,7 @@
                 backgroundDesign="Solid"
                 styleClass="sapUiTinyMargin" />
         </layoutData>
+		<mvc:XMLView id="_IDGenXMLView1" viewName="gestiondispo.view.Content"/>
     </VBox>
-     
 	</FlexBox>
 </mvc:View>
