@@ -1,7 +1,61 @@
 <mvc:View controllerName="gestiondispo.controller.Dashboard"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
-    </Page>
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:tnt="sap.tnt"
+    displayBlock="true">
+    <!-- nav bar  -->
+     <tnt:ToolHeader id="shellLikeToolHeader" class="sapUiTinyMargin customRedBackground" >
+
+			<Title text="ELRHANNI Ayoub" wrapping="false" id="productName">
+				<layoutData>
+					<OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData3" priority="Disappear"/>
+				</layoutData>
+			</Title>
+			<ToolbarSpacer id="_IDGenToolbarSpacer1" />
+	
+			<ToolbarSpacer id="spacer">
+				<layoutData>
+					<OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData6" priority="Low" group="1"/>
+				</layoutData>
+			</ToolbarSpacer>
+			<Button visible="false" icon="sap-icon://search" type="Transparent" id="searchButton" tooltip="Search"/>
+			
+            <Avatar id="_IDGenAvatar2" src="test-resources/sap/tnt/images/Woman_avatar_01.png" displaySize="XS" press=".onAvatarPressed" tooltip="Profile">
+				<layoutData>
+					<OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData12" priority="NeverOverflow"/>
+				</layoutData>
+			</Avatar>
+            <Title text="Hello, Zakaria!" wrapping="false" id="sessionName">
+				<layoutData>
+					<OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData4" priority="Disappear"/>
+				</layoutData>
+			</Title>
+			<Button id="_IDGenButton3" icon="sap-icon://navigation-down-arrow" type="Transparent" tooltip="Notification">
+				<layoutData>
+					<OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData11" priority="NeverOverflow"/>
+				</layoutData>
+			</Button>
+			<Button id="_IDGenButton2" icon="sap-icon://bell" type="Transparent" tooltip="Notification">
+				<layoutData>
+					<OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData10" priority="NeverOverflow"/>
+				</layoutData>
+			</Button>
+			<tnt:ToolHeaderUtilitySeparator id="_IDGenToolHeaderUtilitySeparator1"/>
+		</tnt:ToolHeader>
+
+
+        <!-- side navigation  -->
+<VBox id="IDGenVBox1" renderType="Bare" alignItems="Start" height="100%" width="20%">
+    <!-- Logo here -->
+    <Image id="_IDGenImage1" src="../assets/images/inetum.png" height="70px" width="100%" class="customLogoClass"/>
+    <tnt:SideNavigation id="sideNavigation" selectedKey="home">
+        <tnt:NavigationList id="_IDGenNavigationList1">
+            <tnt:NavigationListItem id="_IDGenNavigationListItem1" text="Homepage" icon="sap-icon://home"/>
+            <tnt:NavigationListItem id="_IDGenNavigationListItem2" text="Consultants" icon="sap-icon://group"/>
+            <tnt:NavigationListItem id="_IDGenNavigationListItem3" text="Tickets" icon="sap-icon://action"/>
+            <tnt:NavigationListItem id="_IDGenNavigationListItem4" text="Projects" icon="sap-icon://lead"/>
+        </tnt:NavigationList>
+    </tnt:SideNavigation>
+</VBox>
+
 </mvc:View>
