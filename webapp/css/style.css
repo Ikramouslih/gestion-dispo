@@ -9,11 +9,21 @@
 }
 .sidenav {
     width: 100% !important;
+    background-color: #F2F2F2 !important;
+
 }
 .sidenavigation{
     margin: 0 !important;
-    background-color: red !important;
 }
 .navbar{
     margin: 0 !important;
+}
+.sideNavLinks{
+    background-color: #F2F2F2 !important;
+    width: 50% !important;
+}
+.customLogoClass{
+    height: 90px;
+    width: 90%;
+    margin: auto;
 }
