@@ -1,10 +1,36 @@
 <mvc:View controllerName="gestiondispo.controller.Dashboard"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
     xmlns:tnt="sap.tnt"
     displayBlock="true">
+	<FlexBox id="_IDGenFlexBox1"
+				height="100%"
+				>
+        <!-- side navigation  -->
+    <VBox id="IDGenVBox1" class="sidenavigation" renderType="Bare" alignItems="Start" height="100%" width="20%">
+        <!-- Logo here -->
+        <Image id="_IDGenImage1" src="../assets/images/inetum.png" height="70px" width="100%" class="customLogoClass"/>
+        <tnt:SideNavigation id="sideNavigation" selectedKey="home" class="sidenav">
+            <tnt:NavigationList id="_IDGenNavigationList1">
+                <tnt:NavigationListItem id="_IDGenNavigationListItem1" text="Homepage" icon="sap-icon://home"/>
+                <tnt:NavigationListItem id="_IDGenNavigationListItem2" text="Consultants" icon="sap-icon://group"/>
+                <tnt:NavigationListItem id="_IDGenNavigationListItem3" text="Tickets" icon="sap-icon://action"/>
+                <tnt:NavigationListItem id="_IDGenNavigationListItem4" text="Projects" icon="sap-icon://lead"/>
+            </tnt:NavigationList>
+        </tnt:SideNavigation>
+        	<layoutData>
+					<FlexItemData id="_IDGenFlexItemData1"
+						growFactor="1"
+						baseSize="0"
+						backgroundDesign="Solid"
+						styleClass="sapUiTinyMargin" />
+			</layoutData>
+    </VBox>
+
     <!-- nav bar  -->
-     <tnt:ToolHeader id="shellLikeToolHeader" class="sapUiTinyMargin customRedBackground" >
+    <VBox id="_IDGenVBox1" class="navbar">
+    <tnt:ToolHeader id="shellLikeToolHeader" class="sapUiTinyMargin customRedBackground" >
 
 			<Title text="ELRHANNI Ayoub" wrapping="false" id="productName">
 				<layoutData>
@@ -42,20 +68,14 @@
 			</Button>
 			<tnt:ToolHeaderUtilitySeparator id="_IDGenToolHeaderUtilitySeparator1"/>
 		</tnt:ToolHeader>
-
-
-        <!-- side navigation  -->
-<VBox id="IDGenVBox1" renderType="Bare" alignItems="Start" height="100%" width="20%">
-    <!-- Logo here -->
-    <Image id="_IDGenImage1" src="../assets/images/inetum.png" height="70px" width="100%" class="customLogoClass"/>
-    <tnt:SideNavigation id="sideNavigation" selectedKey="home">
-        <tnt:NavigationList id="_IDGenNavigationList1">
-            <tnt:NavigationListItem id="_IDGenNavigationListItem1" text="Homepage" icon="sap-icon://home"/>
-            <tnt:NavigationListItem id="_IDGenNavigationListItem2" text="Consultants" icon="sap-icon://group"/>
-            <tnt:NavigationListItem id="_IDGenNavigationListItem3" text="Tickets" icon="sap-icon://action"/>
-            <tnt:NavigationListItem id="_IDGenNavigationListItem4" text="Projects" icon="sap-icon://lead"/>
-        </tnt:NavigationList>
-    </tnt:SideNavigation>
-</VBox>
-
+        <layoutData>
+            <FlexItemData id="_IDGenFlexItemData2"
+                growFactor="4"
+                baseSize="0"
+                backgroundDesign="Solid"
+                styleClass="sapUiTinyMargin" />
+        </layoutData>
+    </VBox>
+     
+	</FlexBox>
 </mvc:View>

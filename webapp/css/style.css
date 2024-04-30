@@ -5,5 +5,15 @@
 
 .customRedBackground {
     background-color: #232D4B !important; /* Using !important to override any existing background styles */
-    margin: 0;
+    margin: 0 !important;
+}
+.sidenav {
+    width: 100% !important;
+}
+.sidenavigation{
+    margin: 0 !important;
+    background-color: red !important;
+}
+.navbar{
+    margin: 0 !important;
 }
