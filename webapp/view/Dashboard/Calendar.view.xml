@@ -1,0 +1,12 @@
+<mvc:View
+		controllerName="gestiondispo.controller.Calendar"
+		xmlns:l="sap.ui.layout"
+		xmlns:u="sap.ui.unified"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns="sap.m"
+		class="viewPadding">
+		<l:VerticalLayout id="_IDGenVerticalLayout1" width="" class="sapUiMediumMargin">
+			<u:Calendar id="calendar" legend="legend" intervalSelection="true"/>
+			<u:CalendarLegend id="legend"/>
+		</l:VerticalLayout>
+</mvc:View>

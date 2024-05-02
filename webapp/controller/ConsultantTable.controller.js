@@ -6,7 +6,7 @@ sap.ui.define(
     function (Controller) {
       "use strict";
   
-      return Controller.extend("gestiondispo.controller.Content", {
+      return Controller.extend("gestiondispo.controller.ConsultantTable", {
         onInit: function () {}
       });
     }

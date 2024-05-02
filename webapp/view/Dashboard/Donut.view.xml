@@ -1,0 +1,17 @@
+<mvc:View controllerName="gestiondispo.controller.Donut"
+    xmlns:mvc="sap.ui.core.mvc"
+	xmlns:m="sap.m"
+	xmlns="sap.suite.ui.microchart"
+	xmlns:layout="sap.ui.layout">
+	<m:FlexBox id="_IDGenFlexBox1" class="donut" width="20rem" height="10rem" alignItems="Start" justifyContent="SpaceBetween">
+		<m:items>
+			<InteractiveDonutChart id="_IDGenInteractiveDonutChart1" selectionChanged="onSelectionChanged">
+				<segments>
+					<InteractiveDonutChartSegment id="_IDGenInteractiveDonutChartSegment1" label="Implementation Phase" value="40.0" displayedValue="40.0%" class="DonutSegmentColor1"/>
+					<InteractiveDonutChartSegment id="_IDGenInteractiveDonutChartSegment2" label="Design Phase" value="31.0" displayedValue="21.5%" color="Error"/>
+					<InteractiveDonutChartSegment id="_IDGenInteractiveDonutChartSegment3" label="Test Phase" value="29.0" displayedValue="2.5%" color="Critical"/>
+				</segments>
+			</InteractiveDonutChart>
+		</m:items>
+	</m:FlexBox>
+</mvc:View>

@@ -1,4 +1,4 @@
-<mvc:View controllerName="gestiondispo.controller.Content"
+<mvc:View controllerName="gestiondispo.controller.Card"
       xmlns:mvc="sap.ui.core.mvc"
                 xmlns="sap.m"
                 xmlns:f="sap.f"

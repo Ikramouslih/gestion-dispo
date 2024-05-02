@@ -78,8 +78,7 @@
     "resources": {
       "css": [
         {
-          "uri": "css/style.css"
-        }
+          "uri": "css/style.css"        }
       ]
     },
     "routing": {
@@ -94,20 +93,20 @@
       },
       "routes": [
         {
-          "name": "RouteDashboard",
+          "name": "RouteNavigation",
           "pattern": ":?query:",
           "target": [
-            "TargetDashboard"
+            "TargetNavigation"
           ]
         }
       ],
       "targets": {
-        "TargetDashboard": {
+        "TargetNavigation": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "Dashboard",
-          "viewName": "Dashboard"
+          "viewId": "Navigation",
+          "viewName": "Navigation"
         }
       }
     },

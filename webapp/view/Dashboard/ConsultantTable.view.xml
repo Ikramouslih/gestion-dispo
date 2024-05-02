@@ -1,0 +1,40 @@
+<mvc:HTMLView id="_IDGenHTMLView1"
+              xmlns:mvc="sap.ui.core.mvc"
+              controller="gestiondispo.controller.ConsultantTable"
+                xmlns="sap.m"
+                xmlns:f="sap.f"
+                xmlns:card="sap.f.cards"
+                xmlns:core="sap.ui.core"
+                displayBlock="true"
+                height="100%">
+
+    <Table id="idProductsTable" inset="false" items="{path: '/CONSULTANTIDSet'}">
+                <headerToolbar>
+                </headerToolbar>
+                <columns>
+                    <Column id="_IDGenColumn1" width="12em">
+                        <Text id="_IDGenText1" text="Name" />
+                    </Column>
+                    <Column id="_IDGenColumn2" minScreenWidth="Tablet" demandPopin="true">
+                        <Text id="_IDGenText2" text="FirstName" />
+                    </Column>
+                    <Column id="_IDGenColumn3" minScreenWidth="Desktop" demandPopin="true" width="5em">
+                        <Text id="_IDGenText3" text="Disponibility" />
+                    </Column>
+                    <Column id="_IDGenColumn6" hAlign="Center">
+                        <Text id="_IDGenText8" text="Email" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="_IDGenColumnListItem1" vAlign="Middle">
+                        <cells>
+                            <ObjectIdentifier id="_IDGenObjectIdentifier1" text="{Cin}"/>
+                            <Text id="_IDGenText6" text="{Name}" />
+                            <Text id="_IDGenText7" text="{FirstName}" />
+                            <Text id="_IDGenText77" text="{Disponilbilty}" />
+                            <Text id="_IDGenText88" text="{Email}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+</mvc:HTMLView>

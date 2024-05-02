@@ -6,7 +6,7 @@ sap.ui.define(
   function (Controller) {
     "use strict";
 
-    return Controller.extend("gestiondispo.controller.Dashboard", {
+    return Controller.extend("gestiondispo.controller.Navigation", {
       onInit: function () {},
       onAvatarPressed: function () {
         console.log("Avatar pressed!");

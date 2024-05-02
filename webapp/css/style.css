@@ -27,3 +27,9 @@
     width: 90%;
     margin: auto;
 }
+.donut{
+    margin-top: 100px;
+}
+.DonutSegmentColor1{
+    fill: #ff4500;
+}
