@@ -17,7 +17,7 @@
     },
     "dataSources": {
       "mainService": {
-        "uri": "/sap/opu/odata/sap/ZODA_GEST_DISPO_SRV/",
+        "uri": "/sap/opu/odata/sap/ZODA_GEST_DISPO_SRV_02/",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -98,6 +98,20 @@
           "target": [
             "TargetNavigation"
           ]
+        },
+        {
+          "name": "RouteConsultant",
+          "pattern": "Consultants/",
+          "target": [
+            "TargetConsultants"
+          ]
+        },
+        {
+          "name": "RouteTicket",
+          "pattern": "Tickets/",
+          "target": [
+            "TargetTicket"
+          ]
         }
       ],
       "targets": {
@@ -107,6 +121,20 @@
           "clearControlAggregation": false,
           "viewId": "Navigation",
           "viewName": "Navigation"
+        },
+        "TargetConsultants": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Consultants",
+          "viewName": "Consultants"
+        },
+        "TargetTicket": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Tickets",
+          "viewName": "Tickets"
         }
       }
     },

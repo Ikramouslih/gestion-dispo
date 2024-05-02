@@ -1,0 +1,44 @@
+<mvc:View controllerName="gestiondispo.controller.Dashboard"
+  xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:tnt="sap.tnt"
+    displayBlock="true">
+	<FlexBox id="idFlexDashboardContent"
+				height="100%"
+				>
+			<VBox id="vboxCard">
+				<mvc:XMLView id="_IDGenXMLView1"  viewName="gestiondispo.view.Dashboard.Card"/>
+				<layoutData>
+					<FlexItemData id="_IDGenFlexItemData3"
+						growFactor="1"
+						baseSize="0"
+						backgroundDesign="Solid"
+						styleClass="sapUiTinyMargin" />
+        		</layoutData>
+			</VBox>
+			<VBox id="vboxCalendar" >
+				<mvc:XMLView id="_IDGenXMLView2"  viewName="gestiondispo.view.Dashboard.Calendar"/>
+				<layoutData>
+					<FlexItemData id="_IDGenFlexItemData4"
+						growFactor="1"
+						baseSize="0"
+						backgroundDesign="Solid"
+						styleClass="sapUiTinyMargin" />
+        		</layoutData>
+			</VBox>	
+			<VBox id="vboxDonut" class="vboxDonut">
+				<mvc:XMLView id="_IDGenXMLView3"  viewName="gestiondispo.view.Dashboard.Donut"/>
+				<layoutData>
+					<FlexItemData id="_IDGenFlexItemData5"
+						growFactor="1"
+						baseSize="0"
+						backgroundDesign="Solid"
+						styleClass="sapUiTinyMargin" />
+        		</layoutData>
+			</VBox>				
+		</FlexBox>
+	<VBox id="vboxConsultantTable" class="vboxConsultantTable">
+				<mvc:XMLView id="_IDGenXMLView4"  viewName="gestiondispo.view.Dashboard.ConsultantTable"/>
+	</VBox>
+</mvc:View>

@@ -5,17 +5,16 @@
     xmlns:tnt="sap.tnt"
     displayBlock="true">
 	<FlexBox id="_IDGenFlexBox1"
-				height="100%"
+				height="95%"
 				>
         <!-- side navigation  -->
     <VBox id="IDGenVBox1" class="sidenavigation" renderType="Bare" alignItems="Start" height="100%" width="20%">
-        <!-- Logo here -->
         <Image id="_IDGenImage1" src="../assets/images/inetum.png"  class="customLogoClass"/>
         <tnt:SideNavigation id="sideNavigation" selectedKey="home" class="sidenav">
             <tnt:NavigationList id="_IDGenNavigationList1">
                 <tnt:NavigationListItem id="_IDGenNavigationListItem1" class="sideNavLinks" text="Dahsboard" icon="sap-icon://home"/>
-                <tnt:NavigationListItem id="_IDGenNavigationListItem2" class="sideNavLinks" text="Consultants" icon="sap-icon://add-employee"/>
-                <tnt:NavigationListItem id="_IDGenNavigationListItem3" class="sideNavLinks" text="Tickets" icon="sap-icon://task"/>
+				<tnt:NavigationListItem id="_IDGenNavigationListItem2" class="sideNavLinks" text="Consultants" icon="sap-icon://add-employee" select="onConsultantsSelect" />
+                <tnt:NavigationListItem id="_IDGenNavigationListItem3" class="sideNavLinks" text="Tickets" icon="sap-icon://task" select="onTickettsSelect"/>
                 <tnt:NavigationListItem id="_IDGenNavigationListItem4" class="sideNavLinks" text="Projects" icon="sap-icon://business-objects-experience"/>
             </tnt:NavigationList>
         </tnt:SideNavigation>
@@ -75,43 +74,8 @@
                 backgroundDesign="Solid"
                 styleClass="sapUiTinyMargin" />
         </layoutData>
-			<FlexBox id="idFlexDashboardContent"
-				height="100%"
-				>
-			<VBox id="vboxCard">
-				<mvc:XMLView id="_IDGenXMLView1"  viewName="gestiondispo.view.Dashboard.Card"/>
-				<layoutData>
-					<FlexItemData id="_IDGenFlexItemData3"
-						growFactor="1"
-						baseSize="0"
-						backgroundDesign="Solid"
-						styleClass="sapUiTinyMargin" />
-        		</layoutData>
-			</VBox>
-			<VBox id="vboxCalendar" >
-				<mvc:XMLView id="_IDGenXMLView2"  viewName="gestiondispo.view.Dashboard.Calendar"/>
-				<layoutData>
-					<FlexItemData id="_IDGenFlexItemData4"
-						growFactor="1"
-						baseSize="0"
-						backgroundDesign="Solid"
-						styleClass="sapUiTinyMargin" />
-        		</layoutData>
-			</VBox>	
-			<VBox id="vboxDonut" class="vboxDonut">
-				<mvc:XMLView id="_IDGenXMLView3"  viewName="gestiondispo.view.Dashboard.Donut"/>
-				<layoutData>
-					<FlexItemData id="_IDGenFlexItemData5"
-						growFactor="1"
-						baseSize="0"
-						backgroundDesign="Solid"
-						styleClass="sapUiTinyMargin" />
-        		</layoutData>
-			</VBox>				
-		</FlexBox>
-	<VBox id="vboxConsultantTable" class="vboxConsultantTable">
-				<mvc:XMLView id="_IDGenXMLView4"  viewName="gestiondispo.view.Dashboard.ConsultantTable"/>
-			</VBox>	
+		<!-- Dashboard page  -->
+		<mvc:XMLView id="_IDGenXMLView1"  viewName="gestiondispo.view.Dashboard.Dashboard"/>
     </VBox>
 	</FlexBox>
 </mvc:View>

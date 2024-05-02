@@ -1,0 +1,46 @@
+<mvc:View controllerName="gestiondispo.controller.ConsultantTable"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <Table id="idProductsTable" inset="false" items="{path: '/TICKETIDSet'}">
+                <headerToolbar>
+                </headerToolbar>
+                <columns>
+                    <Column id="_IDGenColumn12" width="12em">
+                        <Text id="_IDGenText12" text="Id Ticket" />
+                    </Column>
+                    <Column id="_IDGenColumn1" width="5em">
+                        <Text id="_IDGenText1" text="Ticket Jira" />
+                    </Column>
+                    <Column id="_IDGenColumn2" minScreenWidth="Tablet" demandPopin="true" width="7em">
+                        <Text id="_IDGenText2" text="Consultant" />
+                    </Column>
+                    <Column id="_IDGenColumn3" minScreenWidth="Desktop" demandPopin="true" width="7em">
+                        <Text id="_IDGenText3" text="Titre" />
+                    </Column>
+                    <Column id="_IDGenColumn6" hAlign="Center" width="20em">
+                        <Text id="_IDGenText8" text="Projet" />
+                    </Column>
+                    <Column id="_IDGenColumn7" hAlign="End">
+                        <Text id="_IDGenText9" text="Start Date"/>
+                    </Column>
+                    <Column id="_IDGenColumn8" hAlign="End">
+                        <Text id="_IDGenText10" text="Start Date"/>
+                    </Column>
+                                       
+                </columns>
+                <items>
+                    <ColumnListItem id="_IDGenColumnListItem1" vAlign="Middle">
+                        <cells>
+                            <ObjectIdentifier id="_IDGenObjectIdentifier1" text="{IdTicket}"/>
+                            <Text id="_IDGenText6" text="{Name}" />
+                            <Text id="_IDGenText7" text="{FirstName}" />
+                            <Text id="_IDGenText77" text="{Disponilbilty}" />
+                            <Text id="_IDGenText88" text="{Email}" />
+                            <ToggleButton id="ToggleButton1" icon="sap-icon://show" type="Emphasized"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+    </Page>
+</mvc:View>

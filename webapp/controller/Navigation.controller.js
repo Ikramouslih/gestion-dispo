@@ -24,7 +24,14 @@ sap.ui.define(
     onHideShowWalkedPress() {
         const oNavListItem = this.byId("walked");
         oNavListItem.setVisible(!oNavListItem.getVisible());
-    }
+    },
+    onConsultantsSelect: function() {
+      this.getOwnerComponent().getRouter().navTo("RouteConsultant");
+  },
+  onTickettsSelect: function() {
+    this.getOwnerComponent().getRouter().navTo("RouteTicket");
+    console.log("test");
+    },
     });
   }
 );
